@@ -37,7 +37,7 @@ function Conversation(props) {
         </div>
       </div>
       <div className="conversation__input-container">
-        <InputWithButton className="conversation__input" onSubmit={props.onSubmit} placeholder="Please ask me something"/>
+        <InputWithButton className="conversation__input" onSubmit={props.onSubmit} placeholder="Bitte stelle eine Frage"/>
       </div>
     </div>
   );

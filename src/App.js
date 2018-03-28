@@ -29,7 +29,8 @@ class App extends Component {
   callWatson(message) {
     //const watsonApiUrl = process.env.REACT_APP_API_URL;
     //const watsonApiUrl = "https://openwhisk.ng.bluemix.net/api/v1/web/seitter_org_dev/conversation-with-discovery-openwhisk/conversation-with-discovery-sequence.json"
-    const watsonApiUrl = "https://openwhisk.eu-de.bluemix.net/api/v1/web/seitter%40de.ibm.com_dev/hs-bcw2018/bcw2018-sequence.json"
+    //const watsonApiUrl = "https://openwhisk.eu-de.bluemix.net/api/v1/web/seitter%40de.ibm.com_dev/hs-bcw2018/bcw2018-sequence.json"
+    const watsonApiUrl = "https://openwhisk.eu-de.bluemix.net/api/v1/web/seitter%40de.ibm.com_public-sector/hs-chitchat-bmi-init/hs-chitchat-sequence-1.json"
     
     
     const requestJson = JSON.stringify({
@@ -225,15 +226,15 @@ class App extends Component {
       <div className='button__container'>   
         <p className='conversation__intro'>
            <img src={ require('./images/ibmcloud_icon.png') } />
-           <br/>Dies ist eine interaktive Demo/Prototyp von unterschiedlichen IBM Watson services,
-                um Dialoge abzubilden, die funktionell über einen standard Dialog hinausgehen.
+           <br/>Dies ist eine interaktiver Watson ChitChat Prototyp, der aus unterschiedlichen IBM Watson services zusammen gestellt,
+                um Dialoge abzubilden, die über einen "normalen" Standarddialog hinausgehen.
             <br/><br/>
-                Der Chatbot ist auf derzeit auf deutscher Sprache implementiert, kann aber auf anderen Sprachen ausgebaut werden.
+                Der ChitChat Bot ist auf derzeit auf deutscher und englischer Sprache implementiert, kann aber auf anderen Sprachen ausgebaut werden.
             <br/>
-                Derzeit sind einige Beispieldialog zu allgemeinen Fragen implementiert und ein Beispieldialog über 
-                'Elektromobility' als Demo abgebildet. 
-            <br/>Gebe eine Frage ein und probiere die Dialoge aus.
-
+                Derzeit sind einige Beispieldialog zu allgemeinen Fragen implementiert sowie zu ebikes, sowie 
+            <br/><br/>
+                einige Fragen zum Thema "Reisepass" (in Berlin).
+                <br/><br/>Starte den Dialog und gebe eine Frage ein ....
         </p>
         <p className='conversation__intro_links'>
             <br/> <a href="https://console.bluemix.net/openwhisk/" target='_blank'>IBM Cloud Functions     <img src={ require('./images/functions_icon.png' )} /></a>
